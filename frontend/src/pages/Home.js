@@ -20,7 +20,7 @@ const Home = () => {
         }
 
         fetchWorkouts()
-    }, []) // fires once when the component is rendered
+    }, [dispatch]) // fires once when the component is rendered
 
 
     return (
