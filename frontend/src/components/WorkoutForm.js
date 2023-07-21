@@ -49,14 +49,20 @@ const WorkoutForm = () => {
     return (
         <form className="create" onSubmit={handleSubmit}>
             <h3>Add a New Workout</h3>
-            <label>Exercise Title:</label>
-            <input type="text" onChange={(e) => setTitle(e.target.value)} value={title} className={emptyFields.includes('title') ? 'error' : ''}/>
+            <div className="title">
+                <label>Exercise Title:</label>
+                <input type="text" onChange={(e) => setTitle(e.target.value)} value={title} className={emptyFields.includes('title') ? 'error' : ''}/>
+            </div>
 
-            <label>Load (in Kg):</label>
-            <input type="number" onChange={(e) => setLoad(e.target.value)} value={load} className={emptyFields.includes('load') ? 'error' : ''}/>
+            <div className="load">
+                <label>Load (in Kg):</label>
+                <input type="number" onChange={(e) => setLoad(e.target.value)} value={load} className={emptyFields.includes('load') ? 'error' : ''}/>
+            </div>
 
-            <label>Reps:</label>
-            <input type="number" onChange={(e) => setReps(e.target.value)} value={reps} className={emptyFields.includes('reps') ? 'error' : ''}/>
+            <div className="reps">
+                <label>Reps:</label>
+                <input type="number" onChange={(e) => setReps(e.target.value)} value={reps} className={emptyFields.includes('reps') ? 'error' : ''}/>
+            </div>
 
             <button>Add Workout</button>
             {error && <div className="error">{error}</div>}

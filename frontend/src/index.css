@@ -145,3 +145,69 @@ form.signup, form.login {
   border-radius: 4px;
 }
 
+@media only screen and (max-width: 600px) {
+
+  .container {
+    flex-direction: column;
+  }
+
+  .home {
+    grid-template-columns: none;
+    
+  } 
+
+  .home {
+    height: 90vh;
+    gap: 0px
+  }
+  .home .workouts {
+    overflow: scroll;
+  }
+
+  .home form {
+    display: grid;
+    grid-template-areas: 
+    'addArea addArea addArea'
+    'titleArea titleArea titleArea'
+    'loadArea repsArea buttonArea'
+    'errorArea errorArea errorArea';
+    align-items: center;
+  }
+
+  .home form > * {
+    padding: 2px;
+  }
+  
+  .home form > div > * {
+  }
+
+  .home form h3 {
+    grid-area: addArea;
+  }
+
+  .home form .title {
+    grid-area: titleArea;
+  }
+
+  .home form .load {
+    grid-area: loadArea;
+  }
+
+  .home form .reps {
+    grid-area: repsArea;
+  }
+  
+  .home form button {
+    grid-area: buttonArea;
+    height: 30px; 
+    margin-top: 15px; 
+  }
+
+  .home form .error {
+    grid-area: errorArea;
+  }
+
+  
+
+
+}
