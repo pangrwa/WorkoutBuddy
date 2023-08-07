@@ -1,5 +1,5 @@
 {
-  "proxy": "https://main--workout-buddyy.netlify.app",
+  "proxy": "https://workout-buddy-39hw.onrender.com",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
